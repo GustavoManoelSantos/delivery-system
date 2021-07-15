@@ -17,7 +17,7 @@ class Categoria(models.Model):
 
 class Opcoes(models.Model):
     nome = models.CharField(max_length=100)
-    acrecimo = models.FloatField(default=0)
+    acrescimo = models.FloatField(default=0)
     ativo = models.BooleanField(default=True)
     def __str__(self):
         return self.nome
